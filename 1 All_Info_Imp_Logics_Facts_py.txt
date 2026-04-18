@@ -1,0 +1,89 @@
+
+#This file is for noting all important functions, mechanics, systems, structure, logics listed in here.
+#This might be useful in future works.
+#This is just for me to remember this coding practice, for understanding some features!!
+
+import sys
+import time
+import random
+from tkinter import *
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#For appending a word as a list in nt=[],
+#instead of using list function where sq brackets hampers
+nt = []
+
+word= 'cat'
+for letter in word:
+    nt.append(letter)
+print(nt)
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#For (while) loop, if (continue) is use in a (if elif) statement, it will return to beginning of the loop and start again.
+#As for break will stop the loop, if two (while) loop, then (break) will stop the inner (while) loop but continue the outer. Same for (continue)
+while True:
+    if 
+        while True:
+            if 
+                break
+            else:
+                continue
+    elif
+        continue
+    else:
+        break
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+#Matrix system
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+matrix2 = matrix.copy()
+matrix.append(10) #only independent for the outer list.
+matrix[0].append(10)
+
+print(matrix)
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Dictionary updating system
+
+name_list = {}
+name = input('>')
+points = input('>')
+
+name_list[name] = points
+print(name_list['random_word']) #will give keyerror
+print(name_list.get('random_word','default')) #this will give a 'NONE' response or the default value written in 'default' position
+name_list.update({'random':20,'multi':50,'listss':[1,2,3],'hell':{'core':2,'cover':[5,4]}})
+name_list['listss'].append(4) #in this way, append or other dot module can be use for list in dictionary
+print(name_list)
+value = name_list.get('hell','?').get('cover','?')[1] #this is the way to properly access the key cover 2nd value of the list
+print(value)
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Differnt Importing systems
+
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+#Loading Timer
+for i in [3]:
+    dot=''
+    for _ in range(i):
+        dot += "."
+        print(dot, end="\r", flush=True)
+        #flush means it will print it temporarily and remove just after printing completely
+        time.sleep(pause_time)
+
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------
